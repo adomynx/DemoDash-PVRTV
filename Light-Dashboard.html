@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/3d-glasses.svg" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dashboard</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="main">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="javascript:;" class="flex mr-auto">
+                    <img alt="#" class="w-6" src="dist/images/3d-glasses.svg">
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-29 py-5 hidden">
+                <li>
+                    <a href="#" class="menu menu--active">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> Dashboard  </div>
+                    </a>
+                   
+                     
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="user-plus"></i> </div>
+                        <div class="menu__title">Users</div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                        <div class="menu__title">Users Subscription</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="film"></i> </div>
+                        <div class="menu__title">Movies</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="tv"></i> </div>
+                        <div class="menu__title">Live TV</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="globe"></i> </div>
+                        <div class="menu__title">Tv Series</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="command"></i> </div>
+                        <div class="menu__title">Producer Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="send"></i> </div>
+                        <div class="menu__title">Packages</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="cloud-snow"></i> </div>
+                        <div class="menu__title">Blog</div>
+                    </a>
+                </li>
+                 <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="video"></i> </div>
+                        <div class="menu__title">Directors</div>
+                    </a>
+                </li>
+                 <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="star"></i> </div>
+                        <div class="menu__title">Actors</div>
+                    </a>
+                </li>
+                <li class="menu__devider my-6"></li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="framer"></i> </div>
+                        <div class="menu__title">Genres<i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title">Demo</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title">Demo</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="bell"></i> </div>
+                        <div class="menu__title">Notifications</div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="headphones"></i> </div>
+                        <div class="menu__title">Audio Languages</div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="menu"></i> </div>
+                        <div class="menu__title">Menu / Navigation</div>
+                    </a>
+                    
+                 </li>
+                 <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="sliders"></i> </div>
+                        <div class="menu__title">Stripe Settings</div>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="play"></i> </div>
+                        <div class="menu__title">Player Settings</div>
+                    </a>
+                 </li>
+                        
+                <li class="menu__devider my-6"></li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="scissors"></i> </div>
+                        <div class="menu__title">Site Customization</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="settings"></i> </div>
+                        <div class="menu__title">Site Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="minimize"></i> </div>
+                        <div class="menu__title">Translations</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="help-circle"></i> </div>
+                        <div class="menu__title">FAQ's</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="eye"></i> </div>
+                        <div class="menu__title">View Tracker</div>
+                    </a>
+                </li>
+                
+        </div>
+        <!-- END: Mobile Menu -->
+        <div class="flex">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="javascript:;" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="#" class="w-6" src="dist/images/3d-glasses.svg">
+                    <span class="hidden xl:block text-white text-lg ml-3"> PVR<span class="font-medium">&nbsp;TV</span> </span>
+                </a>
+                <div class="side-nav__devider my-6"></div>
+                <ul>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title">
+                                Dashboard 
+                                
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="user-plus"></i> </div>
+                            <div class="side-menu__title">
+                                Users
+                                <div class="side-menu__sub-icon"></div>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="inbox"></i> </div>
+                            <div class="side-menu__title">Users Subscription</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="film"></i> </div>
+                            <div class="side-menu__title">Movies</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="tv"></i> </div>
+                            <div class="side-menu__title">Live TV</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="globe"></i> </div>
+                            <div class="side-menu__title">Tv Series</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="command"></i> </div>
+                            <div class="side-menu__title">Producer Settings</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="send"></i> </div>
+                            <div class="side-menu__title">Packages</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="cloud-snow"></i> </div>
+                            <div class="side-menu__title">Blog</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="video"></i> </div>
+                            <div class="side-menu__title">Directors</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="star"></i> </div>
+                            <div class="side-menu__title">Actors</div>
+                        </a>
+                    </li>
+                    <li class="side-nav__devider my-6"></li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="framer"></i> </div>
+                            <div class="side-menu__title">
+                                Genres 
+                              
+                            </div>
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="bell"></i> </div>
+                            <div class="side-menu__title">
+                                Notifications
+                               
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="headphones"></i> </div>
+                            <div class="side-menu__title">
+                                Audio Languages
+                                
+                            </div>
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="menu"></i> </div>
+                            <div class="side-menu__title">
+                                Menu / Navigation
+                                
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="sliders"></i> </div>
+                            <div class="side-menu__title">
+                               Stripe Settings
+                                
+                            </div>
+                        </a>
+                    </li>
+
+                  <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="play"></i> </div>
+                            <div class="side-menu__title">
+                               Player Settings
+                                
+                            </div>
+                        </a>
+                    </li>
+                 
+                    <li class="side-nav__devider my-6"></li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="scissors"></i> </div>
+                            <div class="side-menu__title">
+                                Site Customization
+                                
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="settings"></i> </div>
+                            <div class="side-menu__title">
+                                Site Settings
+                                
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="minimize"></i> </div>
+                            <div class="side-menu__title">
+                                Translations 
+                               
+                            </div>
+                        </a>
+
+                    </li>
+                     <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="help-circle"></i> </div>
+                            <div class="side-menu__title">
+                                FAQ's 
+                               
+                            </div>
+                        </a>
+
+                    </li>
+                     <li>
+                        <a href="javascript:;" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="eye"></i> </div>
+                            <div class="side-menu__title">
+                                View Tracker
+                               
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <!-- BEGIN: Breadcrumb -->
+                    <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="javascript:;">Application</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="javascript:;" class="breadcrumb--active">Dashboard</a> </div>
+                    <!-- END: Breadcrumb -->
+                    <!-- BEGIN: Search -->
+                    <div class="intro-x relative mr-3 sm:mr-6">
+                        <div class="search hidden sm:block">
+                            <input type="text" class="search__input form-control border-transparent placeholder-theme-13" placeholder="Search...">
+                            <i data-feather="search" class="search__icon dark:text-gray-300"></i> 
+                        </div>
+                        <a class="notification sm:hidden" href="javascript:;"> <i data-feather="search" class="notification__icon dark:text-gray-300"></i> </a>
+                                
+                    </div>
+                    <!-- END: Search -->
+                    <!-- BEGIN: Notifications -->
+                    <div class="intro-x dropdown mr-auto sm:mr-6">
+                        <div class="dropdown-toggle notification notification--bullet cursor-pointer" role="button" aria-expanded="false"> <i data-feather="bell" class="notification__icon dark:text-gray-300"></i> </div>
+                        <div class="notification-content pt-2 dropdown-menu">
+                            <div class="notification-content__box dropdown-menu__content box dark:bg-dark-6">
+                                <div class="notification-content__title">Notifications</div>
+                                <div class="cursor-pointer relative flex items-center ">
+                                    <div class="w-12 h-12 flex-none image-fit mr-1">
+                                        <img alt="#" class="rounded-full" src="dist/images/profile-10.jpg">
+                                        <div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                    </div>
+                                    <div class="ml-2 overflow-hidden">
+                                        <div class="flex items-center">
+                                            <a href="javascript:;" class="font-medium truncate mr-5">Shobha Shetty</a> 
+                                            <div class="text-xs text-gray-500 ml-auto whitespace-nowrap">05:09 AM</div>
+                                        </div>
+                                        <div class="w-full truncate text-gray-600 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer relative flex items-center mt-5">
+                                    <div class="w-12 h-12 flex-none image-fit mr-1">
+                                        <img alt="#" class="rounded-full" src="dist/images/profile-1.jpg">
+                                        <div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                    </div>
+                                    <div class="ml-2 overflow-hidden">
+                                        <div class="flex items-center">
+                                            <a href="javascript:;" class="font-medium truncate mr-5">krish</a> 
+                                            <div class="text-xs text-gray-500 ml-auto whitespace-nowrap">03:20 PM</div>
+                                        </div>
+                                        <div class="w-full truncate text-gray-600 mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer relative flex items-center mt-5">
+                                    <div class="w-12 h-12 flex-none image-fit mr-1">
+                                        <img alt="#" class="rounded-full" src="dist/images/profile-15.jpg">
+                                        <div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                    </div>
+                                    <div class="ml-2 overflow-hidden">
+                                        <div class="flex items-center">
+                                            <a href="javascript:;" class="font-medium truncate mr-5">Sounak Biswas</a> 
+                                            <div class="text-xs text-gray-500 ml-auto whitespace-nowrap">01:10 PM</div>
+                                        </div>
+                                        <div class="w-full truncate text-gray-600 mt-0.5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 20</div>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer relative flex items-center mt-5">
+                                    <div class="w-12 h-12 flex-none image-fit mr-1">
+                                        <img alt="#" class="rounded-full" src="dist/images/profile-7.jpg">
+                                        <div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                    </div>
+                                    <div class="ml-2 overflow-hidden">
+                                        <div class="flex items-center">
+                                            <a href="javascript:;" class="font-medium truncate mr-5">Shawn Murray</a> 
+                                            <div class="text-xs text-gray-500 ml-auto whitespace-nowrap">01:10 PM</div>
+                                        </div>
+                                        <div class="w-full truncate text-gray-600 mt-0.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500</div>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer relative flex items-center mt-5">
+                                    <div class="w-12 h-12 flex-none image-fit mr-1">
+                                        <img alt="#" class="rounded-full" src="dist/images/profile-8.jpg">
+                                        <div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                    </div>
+                                    <div class="ml-2 overflow-hidden">
+                                        <div class="flex items-center">
+                                            <a href="javascript:;" class="font-medium truncate mr-5">kishore</a> 
+                                            <div class="text-xs text-gray-500 ml-auto whitespace-nowrap">01:10 PM</div>
+                                        </div>
+                                        <div class="w-full truncate text-gray-600 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Notifications -->
+                    <!-- BEGIN: Account Menu -->
+                    <div class="intro-x dropdown w-8 h-8">
+                        <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button" aria-expanded="false">
+                            <img alt="#" src="dist/images/profile-6.jpg">
+                        </div>
+                        <div class="dropdown-menu w-56">
+                            <div class="dropdown-menu__content box bg-theme-26 dark:bg-dark-6 text-white">
+                                <div class="p-4 border-b border-theme-27 dark:border-dark-3">
+                                    <div class="font-medium">Shobha Shetty</div>
+                                    <div class="text-xs text-theme-28 mt-0.5 dark:text-gray-600">Welcome!</div>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                                </div>
+                                <div class="p-2 border-t border-theme-27 dark:border-dark-3">
+                                    <a href="#" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Account Menu -->
+                </div>
+                <!-- END: Top Bar -->
+                <div class="grid grid-cols-12 gap-6">
+                    <div class="col-span-12 xxl:col-span-9">
+                        <div class="grid grid-cols-12 gap-6">
+                            <!-- BEGIN: General Report -->
+                            <div class="col-span-12 mt-8">
+                                <div class="intro-y flex items-center h-10">
+                                    <h2 class="text-lg font-medium truncate mr-5">
+                                        General Report
+                                    </h2>
+                                    <a href="javascript:;" class="ml-auto flex items-center text-theme-1 dark:text-theme-10"> <i data-feather="refresh-ccw" class="w-4 h-4 mr-3"></i> Reload Data </a>
+                                </div>
+                                <div class="grid grid-cols-12 gap-6 mt-5">
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <div class="report-box zoom-in">
+                                            <div class="box p-5">
+                                                <div class="flex">  
+                                                    <i data-feather="user" class="report-box__icon text-theme-9"></i>
+                                                </div>
+                                                <div class="text-3xl font-bold leading-8 mt-6">83</div>
+                                                <div class="text-base text-gray-600 mt-1">Registered Users</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <div class="report-box zoom-in">
+                                            <div class="box p-5">
+                                                <div class="flex">
+                                                    <i data-feather="activity" class="report-box__icon text-theme-12"></i>  
+                                                </div>
+                                                <div class="text-3xl font-bold leading-8 mt-6">165</div>
+                                                <div class="text-base text-gray-600 mt-1">Total Active Users</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <div class="report-box zoom-in">
+                                            <div class="box p-5">
+                                                <div class="monitor">
+                                                    <i data-feather="credit-card" class="report-box__icon text-theme-10"></i> 
+                                                </div>
+                                                <div class="text-3xl font-bold leading-8 mt-6">3</div>
+                                                <div class="text-base text-gray-600 mt-1">Total Movies</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <div class="report-box zoom-in">
+                                            <div class="box p-5">
+                                                <div class="flex">
+                                                    <i data-feather="tv" class="report-box__icon text-theme-11"></i> 
+                                                </div>
+                                                <div class="text-3xl font-bold leading-8 mt-6">0</div>
+                                                <div class="text-base text-gray-600 mt-1">Total Tv Series</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <div class="report-box zoom-in">
+                                            <div class="box p-5">
+                                                <div class="flex">
+                                                    <i data-feather="package" class="report-box__icon text-theme-14"></i> 
+                                                </div>
+                                                <div class="text-3xl font-bold leading-8 mt-6">0</div>
+                                                <div class="text-base text-gray-600 mt-1">Total Packages</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <div class="report-box zoom-in">
+                                            <div class="box p-5">
+                                                <div class="flex">
+                                                    <i data-feather="gift" class="report-box__icon text-theme-11"></i> 
+                                                </div>
+                                                <div class="text-3xl font-bold leading-8 mt-6">0</div>
+                                                <div class="text-base text-gray-600 mt-1">Total Coupons</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <div class="report-box zoom-in">
+                                            <div class="box p-5">
+                                                <div class="flex">
+                                                    <i data-feather="help-circle" class="report-box__icon text-theme-12"></i> 
+                                                </div>
+                                                <div class="text-3xl font-bold leading-8 mt-6">0</div>
+                                                <div class="text-base text-gray-600 mt-1">Total FAQs</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
+                                        <div class="report-box zoom-in">
+                                            <div class="box p-5">
+                                                <div class="flex">
+                                                    <i data-feather="filter" class="report-box__icon text-theme-13"></i>  
+                                                </div>
+                                                <div class="text-3xl font-bold leading-8 mt-6">8</div>
+                                                <div class="text-base text-gray-600 mt-1">Total Genres</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- END: General Report -->
+                            <!-- BEGIN: Sales Report -->
+                            <div class="col-span-12 lg:col-span-6 mt-8">
+                                <div class="intro-y block sm:flex items-center h-10">
+                                    <h2 class="text-lg font-medium truncate mr-5">
+                                        Monthly Active Subscribers
+                                </div>
+                                <div class="intro-y box p-5 mt-12 sm:mt-5">
+                                    <div class="flex flex-col xl:flex-row xl:items-center">
+                                        <div class="flex">
+                                            <div>
+                                                <div class="text-theme-19 dark:text-gray-300 text-lg xl:text-xl font-bold">100</div>
+                                                <div class="mt-0.5 text-gray-600 dark:text-gray-600">This Month</div>
+                                            </div>
+                                            <div class="w-px h-12 border border-r border-dashed border-gray-300 dark:border-dark-5 mx-4 xl:mx-6"></div>
+                                            <div>
+                                                <div class="text-gray-600 dark:text-gray-600 text-lg xl:text-xl font-medium">75</div>
+                                                <div class="mt-0.5 text-gray-600 dark:text-gray-600">Last Month</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="report-chart">
+                                        <canvas id="report-line-chart" height="169" class="mt-6"></canvas>
+                                    </div>
+                                </div>
+                            </div><br><br>
+                            <!-- END: Sales Report -->
+                           <div class="row-start-2 md:row-start-auto col-span-12 md:col-span-4 py-6 border-black border-opacity-10 border-t md:border-t-0 md:border-l md:border-r border-dashed px-10 sm:px-28 md:px-5 -mx-5"><br>
+                                    <div class="flex flex-wrap items-center">
+                                        <div class="flex items-center w-full sm:w-auto justify-center sm:justify-start mr-auto mb-5 xxl:mb-0">
+                                            
+                                            <div class="ml-3.5">
+                                                <div class="relative text-xl xxl:text-2xl font-medium leading-6 xxl:leading-5 pl-3.5"> Monthly New Registered Users</div>
+                                                
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="mt-12 text-xs text-gray-900 dark:text-gray-500">You have increased user by 25%</div>
+                                    <canvas class="mt-4" id="report-bar-chart-1" height="267"></canvas>
+                                </div>
+                            <!-- BEGIN: General Report -->
+                            <div class="col-span-12 grid grid-cols-12 gap-6 mt-8">
+                                <div class="col-span-12 sm:col-span-6 xxl:col-span-3 intro-y">
+                                    <div class="box p-5 zoom-in">
+                                        <div class="flex items-center">
+                                            <div class="w-2/4 flex-none">
+                                                <div class="text-lg font-medium truncate">Active Users</div>
+                                                <div class="text-gray-600 mt-1">83</div>
+                                            </div>
+                                            <div class="flex-none ml-auto relative">
+                                                <canvas id="report-donut-chart-1" width="90" height="90"></canvas>
+                                                <div class="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0">83%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 xxl:col-span-3 intro-y">
+                                    <div class="box p-5 zoom-in">
+                                        <div class="flex">
+                                            <div class="text-lg font-medium truncate mr-3">Social Media</div>
+                                            <div class="py-1 px-2 rounded-full text-xs bg-gray-200 dark:bg-dark-5 text-gray-600 dark:text-gray-300 cursor-pointer ml-auto truncate">320 Followers</div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <canvas class="simple-line-chart-1 -ml-1" height="60"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 xxl:col-span-3 intro-y">
+                                    <div class="box p-5 zoom-in">
+                                        <div class="flex items-center">
+                                            <div class="w-2/4 flex-none">
+                                                <div class="text-lg font-medium truncate">New Users</div>
+                                                <div class="text-gray-600 mt-1">15</div>
+                                            </div>
+                                            <div class="flex-none ml-auto relative">
+                                                <canvas id="report-donut-chart-2" width="90" height="90"></canvas>
+                                                <div class="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0">15%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 xxl:col-span-3 intro-y">
+                                    <div class="box p-5 zoom-in">
+                                        <div class="flex">
+                                            <div class="text-lg font-medium truncate mr-3">Watched Time</div>
+                                            <div class="py-1 px-2 rounded-full text-xs bg-gray-200 dark:bg-dark-5 text-gray-600 dark:text-gray-300 cursor-pointer ml-auto truncate">700 minutes</div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <canvas class="simple-line-chart-1 -ml-1" height="60"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: General Report -->
+
+                        </div>
+                    </div>
+                    <div class="col-span-12 xxl:col-span-3">
+                        <div class="xxl:border-l border-theme-5 -mb-10 pb-10">
+                            <div class="xxl:pl-6 grid grid-cols-12 gap-6"><br>
+                                
+                                <!-- BEGIN: Recent Activities -->
+                                <div class="col-span-12 md:col-span-6 xl:col-span-4 xxl:col-span-12 mt-3">
+                                    <div class="intro-x flex items-center h-10">
+                                        <h2 class="text-lg font-medium truncate mr-5">
+                                            Registered Users
+                                        </h2>
+                                        <a href="javascript:;" class="ml-auto text-theme-1 dark:text-theme-10 truncate">Show More</a> 
+                                    </div>
+                                    <div class="report-timeline mt-5 relative">
+                                        <div class="intro-x relative flex items-center mb-3">
+                                            <div class="report-timeline__image">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="#" src="dist/images/profile-8.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
+                                                <div class="flex items-center">
+                                                    <div class="font-medium">Shobha Shetty</div>
+                                                    <div class="text-xs text-gray-500 ml-auto">07:00 PM</div>
+                                                </div>
+                                                <div class="text-gray-600 mt-1">Has joined the team</div>
+                                                <div class="text-gray-600 mt-1">allanrey002@masterpiece.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x relative flex items-center mb-3">
+                                            <div class="report-timeline__image">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="#" src="dist/images/profile-12.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
+                                                <div class="flex items-center">
+                                                    <div class="font-medium">Sounak Biswas</div>
+                                                    <div class="text-xs text-gray-500 ml-auto">07:00 PM</div>
+                                                </div>
+                                                <div class="text-gray-600">
+                                                    <div class="mt-1">Has joined the team</div>
+                                                    <div class="text-gray-600 mt-1">sounakbiswas1999@gmail.com</div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x text-gray-500 text-xs text-center my-4">12 November</div>
+                                        <div class="intro-x relative flex items-center mb-3">
+                                            <div class="report-timeline__image">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="#" src="dist/images/profile-1.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
+                                                <div class="flex items-center">
+                                                    <div class="font-medium">Shawn Murray</div>
+                                                    <div class="text-xs text-gray-500 ml-auto">11:00 PM</div>
+                                                </div>
+                                                 <div class="mt-1">Has joined the team</div>
+                                                <div class="text-gray-600 mt-1">rheashetty6@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x relative flex items-center mb-3">
+                                            <div class="report-timeline__image">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="#" src="dist/images/profile-11.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="box px-5 py-3 ml-4 flex-1 zoom-in">
+                                                <div class="flex items-center">
+                                                    <div class="font-medium">kishore</div>
+                                                    <div class="text-xs text-gray-500 ml-auto">07:00 PM</div>
+                                                </div>
+                                                 <div class="mt-1">Has joined the team</div>
+                                                <div class="text-gray-600 mt-1">gshyamk65@gmail.com</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END: Recent Activities -->
+                               
+                                <!-- BEGIN: Schedules -->
+                                <div class="col-span-12 md:col-span-6 xl:col-span-4 xxl:col-span-12 xl:col-start-1 xl:row-start-2 xxl:col-start-auto xxl:row-start-auto mt-3">
+                                    <div class="intro-x flex items-center h-10">
+                                        <h2 class="text-lg font-medium truncate mr-5">
+                                            Schedules
+                                        </h2>
+                                        
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="intro-x box">
+                                            <div class="p-5">
+                                                <div class="flex">
+                                                    <i data-feather="chevron-left" class="w-5 h-5 text-gray-600"></i> 
+                                                    <div class="font-medium text-base mx-auto">April</div>
+                                                    <i data-feather="chevron-right" class="w-5 h-5 text-gray-600"></i> 
+                                                </div>
+                                                <div class="grid grid-cols-7 gap-4 mt-5 text-center">
+                                                    <div class="font-medium">Su</div>
+                                                    <div class="font-medium">Mo</div>
+                                                    <div class="font-medium">Tu</div>
+                                                    <div class="font-medium">We</div>
+                                                    <div class="font-medium">Th</div>
+                                                    <div class="font-medium">Fr</div>
+                                                    <div class="font-medium">Sa</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">29</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">30</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">31</div>
+                                                    <div class="py-0.5 rounded relative">1</div>
+                                                    <div class="py-0.5 rounded relative">2</div>
+                                                    <div class="py-0.5 rounded relative">3</div>
+                                                    <div class="py-0.5 rounded relative">4</div>
+                                                    <div class="py-0.5 rounded relative">5</div>
+                                                    <div class="py-0.5 bg-theme-18 dark:bg-theme-9 rounded relative">6</div>
+                                                    <div class="py-0.5 rounded relative">7</div>
+                                                    <div class="py-0.5 bg-theme-1 dark:bg-theme-1 text-white rounded relative">8</div>
+                                                    <div class="py-0.5 rounded relative">9</div>
+                                                    <div class="py-0.5 rounded relative">10</div>
+                                                    <div class="py-0.5 rounded relative">11</div>
+                                                    <div class="py-0.5 rounded relative">12</div>
+                                                    <div class="py-0.5 rounded relative">13</div>
+                                                    <div class="py-0.5 rounded relative">14</div>
+                                                    <div class="py-0.5 rounded relative">15</div>
+                                                    <div class="py-0.5 rounded relative">16</div>
+                                                    <div class="py-0.5 rounded relative">17</div>
+                                                    <div class="py-0.5 rounded relative">18</div>
+                                                    <div class="py-0.5 rounded relative">19</div>
+                                                    <div class="py-0.5 rounded relative">20</div>
+                                                    <div class="py-0.5 rounded relative">21</div>
+                                                    <div class="py-0.5 rounded relative">22</div>
+                                                    <div class="py-0.5 bg-theme-17 dark:bg-theme-11 rounded relative">23</div>
+                                                    <div class="py-0.5 rounded relative">24</div>
+                                                    <div class="py-0.5 rounded relative">25</div>
+                                                    <div class="py-0.5 rounded relative">26</div>
+                                                    <div class="py-0.5 bg-theme-14 dark:bg-theme-12 rounded relative">27</div>
+                                                    <div class="py-0.5 rounded relative">28</div>
+                                                    <div class="py-0.5 rounded relative">29</div>
+                                                    <div class="py-0.5 rounded relative">30</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">1</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">2</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">3</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">4</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">5</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">6</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">7</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">8</div>
+                                                    <div class="py-0.5 rounded relative text-gray-600">9</div>
+                                                </div>
+                                            </div>
+                                            <div class="border-t border-gray-200 dark:border-dark-5 p-5">
+                                                <div class="flex items-center">
+                                                    <div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
+                                                    <span class="truncate">Update Index Features</span> 
+                                                    <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                                    <span class="font-medium xl:ml-auto">23th</span> 
+                                                </div>
+                                                <div class="flex items-center mt-4">
+                                                    <div class="w-2 h-2 bg-theme-1 dark:bg-theme-10 rounded-full mr-3"></div>
+                                                    <span class="truncate">Gather Account info</span> 
+                                                    <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                                    <span class="font-medium xl:ml-auto">10th</span> 
+                                                </div>
+                                                <div class="flex items-center mt-4">
+                                                    <div class="w-2 h-2 bg-theme-12 rounded-full mr-3"></div>
+                                                    <span class="truncate">Social Marketing</span> 
+                                                    <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                                    <span class="font-medium xl:ml-auto">31th</span> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END: Schedules -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: Dark Mode Switcher-->
+        <div data-url="Dark-Dashboard.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box dark:bg-dark-2 border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+            <div class="mr-4 text-gray-700 dark:text-gray-300">Dark Mode</div>
+            <div class="dark-mode-switcher__toggle border"></div>
+        </div>
+        <!-- END: Dark Mode Switcher-->
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>
