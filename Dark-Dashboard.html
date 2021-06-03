@@ -494,7 +494,7 @@
                 <div class="grid grid-cols-12 gap-6">
                     <div class="col-span-12 xxl:col-span-9">
                         <div class="grid grid-cols-12 gap-6">
-                           <!-- BEGIN: General Report -->
+                            <!-- BEGIN: General Report -->
                             <div class="col-span-12 mt-8">
                                 <div class="intro-y flex items-center h-10">
                                     <h2 class="text-lg font-medium truncate mr-5">
@@ -622,6 +622,7 @@
                                 </div>
                             </div><br><br>
                             <!-- END: Sales Report -->
+
                            <div class="row-start-2 md:row-start-auto col-span-12 md:col-span-4 py-6 border-black border-opacity-10 border-t md:border-t-0 md:border-l md:border-r border-dashed px-10 sm:px-28 md:px-5 -mx-5"><br>
                                     <div class="flex flex-wrap items-center">
                                         <div class="flex items-center w-full sm:w-auto justify-center sm:justify-start mr-auto mb-5 xxl:mb-0">
@@ -636,6 +637,79 @@
                                     <div class="mt-12 text-xs text-gray-900 dark:text-gray-500">You have increased user by 25%</div>
                                     <canvas class="mt-4" id="report-bar-chart-1" height="267"></canvas>
                                 </div>
+                                <!-- BEGIN: Official Store -->
+                            <div class="col-span-12 xl:col-span-8 mt-6">
+                                <div class="intro-y block sm:flex items-center h-10">
+                                    <h2 class="text-lg font-medium truncate mr-5">
+                                        Our Adress Map
+                                    </h2>
+                                </div>
+                                <div class="intro-y box p-5 mt-12 sm:mt-5">
+                                    <div>click the marker to see location details.</div>
+                                    <div class="report-maps mt-5 bg-gray-200 rounded-md" data-center="-6.2425342, 106.8626478" data-sources="/dist/json/location.json"></div>
+                                </div>
+                            </div>
+                            <!-- END: Official Store -->
+                            <!-- BEGIN: Weekly Best Sellers -->
+                            <div class="col-span-12 xl:col-span-4 mt-6">
+                                <div class="intro-y flex items-center h-10">
+                                    <h2 class="text-lg font-medium truncate mr-5">
+                                        Weekly Best Sellers
+                                    </h2>
+                                </div>
+                                <div class="mt-5">
+                                    <div class="intro-y">
+                                        <div class="box px-4 py-4 mb-3 flex items-center zoom-in">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-md overflow-hidden">
+                                                <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-10.jpg">
+                                            </div>
+                                            <div class="ml-4 mr-auto">
+                                                <div class="font-medium">Christian Bale</div>
+                                                <div class="text-gray-600 text-xs mt-0.5">30 November 2022</div>
+                                            </div>
+                                            <div class="py-1 px-2 rounded-full text-xs bg-theme-9 text-white cursor-pointer font-medium">137 Sales</div>
+                                        </div>
+                                    </div>
+                                    <div class="intro-y">
+                                        <div class="box px-4 py-4 mb-3 flex items-center zoom-in">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-md overflow-hidden">
+                                                <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-8.jpg">
+                                            </div>
+                                            <div class="ml-4 mr-auto">
+                                                <div class="font-medium">Keanu Reeves</div>
+                                                <div class="text-gray-600 text-xs mt-0.5">10 March 2021</div>
+                                            </div>
+                                            <div class="py-1 px-2 rounded-full text-xs bg-theme-9 text-white cursor-pointer font-medium">137 Sales</div>
+                                        </div>
+                                    </div>
+                                    <div class="intro-y">
+                                        <div class="box px-4 py-4 mb-3 flex items-center zoom-in">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-md overflow-hidden">
+                                                <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-2.jpg">
+                                            </div>
+                                            <div class="ml-4 mr-auto">
+                                                <div class="font-medium">Russell Crowe</div>
+                                                <div class="text-gray-600 text-xs mt-0.5">6 September 2020</div>
+                                            </div>
+                                            <div class="py-1 px-2 rounded-full text-xs bg-theme-9 text-white cursor-pointer font-medium">137 Sales</div>
+                                        </div>
+                                    </div>
+                                    <div class="intro-y">
+                                        <div class="box px-4 py-4 mb-3 flex items-center zoom-in">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-md overflow-hidden">
+                                                <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-8.jpg">
+                                            </div>
+                                            <div class="ml-4 mr-auto">
+                                                <div class="font-medium">Johnny Depp</div>
+                                                <div class="text-gray-600 text-xs mt-0.5">20 August 2021</div>
+                                            </div>
+                                            <div class="py-1 px-2 rounded-full text-xs bg-theme-9 text-white cursor-pointer font-medium">137 Sales</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="intro-y w-full block text-center rounded-md py-4 border border-dotted border-theme-15 dark:border-dark-5 text-theme-16 dark:text-gray-600">View More</a> 
+                                </div>
+                            </div>
+                            <!-- END: Weekly Best Sellers -->
                             <!-- BEGIN: General Report -->
                             <div class="col-span-12 grid grid-cols-12 gap-6 mt-8">
                                 <div class="col-span-12 sm:col-span-6 xxl:col-span-3 intro-y">
@@ -690,13 +764,254 @@
                                 </div>
                             </div>
                             <!-- END: General Report -->
-
+                          <!-- BEGIN: Weekly Top Products -->
+                            <div class="col-span-12 mt-6">
+                                <div class="intro-y block sm:flex items-center h-10">
+                                    <h2 class="text-lg font-medium truncate mr-5">
+                                        Weekly Top Products
+                                    </h2>
+                                    <div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
+                                        <button class="btn box flex items-center text-gray-700 dark:text-gray-300"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to Excel </button>
+                                        <button class="ml-3 btn box flex items-center text-gray-700 dark:text-gray-300"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to PDF </button>
+                                    </div>
+                                </div>
+                                <div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
+                                    <table class="table table-report sm:mt-2">
+                                        <thead>
+                                            <tr>
+                                                <th class="whitespace-nowrap">IMAGES</th>
+                                                <th class="whitespace-nowrap">PRODUCT NAME</th>
+                                                <th class="text-center whitespace-nowrap">STOCK</th>
+                                                <th class="text-center whitespace-nowrap">STATUS</th>
+                                                <th class="text-center whitespace-nowrap">ACTIONS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="intro-x">
+                                                <td class="w-40">
+                                                    <div class="flex">
+                                                        <div class="w-10 h-10 image-fit zoom-in">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-9.jpg" title="Uploaded at 30 November 2022">
+                                                        </div>
+                                                        <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-4.jpg" title="Uploaded at 15 December 2020">
+                                                        </div>
+                                                        <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-1.jpg" title="Uploaded at 23 January 2022">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="" class="font-medium whitespace-nowrap">Sony Master Series A9G</a> 
+                                                    <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">Electronic</div>
+                                                </td>
+                                                <td class="text-center">84</td>
+                                                <td class="w-40">
+                                                    <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                                </td>
+                                                <td class="table-report__action w-56">
+                                                    <div class="flex justify-center items-center">
+                                                        <a class="flex items-center mr-3" href=""> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                                        <a class="flex items-center text-theme-6" href=""> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="intro-x">
+                                                <td class="w-40">
+                                                    <div class="flex">
+                                                        <div class="w-10 h-10 image-fit zoom-in">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-11.jpg" title="Uploaded at 10 March 2021">
+                                                        </div>
+                                                        <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-15.jpg" title="Uploaded at 19 December 2020">
+                                                        </div>
+                                                        <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-7.jpg" title="Uploaded at 8 August 2021">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="" class="font-medium whitespace-nowrap">Nike Tanjun</a> 
+                                                    <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">Sport &amp; Outdoor</div>
+                                                </td>
+                                                <td class="text-center">112</td>
+                                                <td class="w-40">
+                                                    <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                                </td>
+                                                <td class="table-report__action w-56">
+                                                    <div class="flex justify-center items-center">
+                                                        <a class="flex items-center mr-3" href=""> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                                        <a class="flex items-center text-theme-6" href=""> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="intro-x">
+                                                <td class="w-40">
+                                                    <div class="flex">
+                                                        <div class="w-10 h-10 image-fit zoom-in">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-14.jpg" title="Uploaded at 6 September 2020">
+                                                        </div>
+                                                        <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-8.jpg" title="Uploaded at 10 June 2022">
+                                                        </div>
+                                                        <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-14.jpg" title="Uploaded at 13 April 2022">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="" class="font-medium whitespace-nowrap">Oppo Find X2 Pro</a> 
+                                                    <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">Smartphone &amp; Tablet</div>
+                                                </td>
+                                                <td class="text-center">50</td>
+                                                <td class="w-40">
+                                                    <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                                </td>
+                                                <td class="table-report__action w-56">
+                                                    <div class="flex justify-center items-center">
+                                                        <a class="flex items-center mr-3" href=""> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                                        <a class="flex items-center text-theme-6" href=""> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="intro-x">
+                                                <td class="w-40">
+                                                    <div class="flex">
+                                                        <div class="w-10 h-10 image-fit zoom-in">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-1.jpg" title="Uploaded at 20 August 2021">
+                                                        </div>
+                                                        <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-4.jpg" title="Uploaded at 19 October 2020">
+                                                        </div>
+                                                        <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                                                            <img alt="Rubick Tailwind HTML Admin Template" class="tooltip rounded-full" src="dist/images/preview-3.jpg" title="Uploaded at 9 October 2021">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="" class="font-medium whitespace-nowrap">Nike Air Max 270</a> 
+                                                    <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">Sport &amp; Outdoor</div>
+                                                </td>
+                                                <td class="text-center">89</td>
+                                                <td class="w-40">
+                                                    <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                                </td>
+                                                <td class="table-report__action w-56">
+                                                    <div class="flex justify-center items-center">
+                                                        <a class="flex items-center mr-3" href=""> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                                        <a class="flex items-center text-theme-6" href=""> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="intro-y flex flex-wrap sm:flex-row sm:flex-nowrap items-center mt-3">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevrons-left"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevron-left"></i> </a>
+                                        </li>
+                                        <li> <a class="pagination__link" href="">...</a> </li>
+                                        <li> <a class="pagination__link" href="">1</a> </li>
+                                        <li> <a class="pagination__link pagination__link--active" href="">2</a> </li>
+                                        <li> <a class="pagination__link" href="">3</a> </li>
+                                        <li> <a class="pagination__link" href="">...</a> </li>
+                                        <li>
+                                            <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevron-right"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevrons-right"></i> </a>
+                                        </li>
+                                    </ul>
+                                    <select class="w-20 form-select box mt-3 sm:mt-0">
+                                        <option>10</option>
+                                        <option>25</option>
+                                        <option>35</option>
+                                        <option>50</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- END: Weekly Top Products -->
                         </div>
                     </div>
                     <div class="col-span-12 xxl:col-span-3">
                         <div class="xxl:border-l border-theme-5 -mb-10 pb-10">
                             <div class="xxl:pl-6 grid grid-cols-12 gap-6"><br>
-                                
+                                 <!-- BEGIN: Transactions -->
+                                <div class="col-span-12 md:col-span-6 xl:col-span-4 xxl:col-span-12 mt-3 xxl:mt-8">
+                                    <div class="intro-x flex items-center h-10">
+                                        <h2 class="text-lg font-medium truncate mr-5">
+                                            User Watchtime
+                                        </h2>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-10.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">Shobha Shetty</div>
+                                                    <div class="text-gray-600 text-xs mt-0.5">30 November 2022</div>
+                                                </div>
+                                                <div class="text-theme-9">+89 Minutes</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-8.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">kishore</div>
+                                                    <div class="text-gray-600 text-xs mt-0.5">10 March 2021</div>
+                                                </div>
+                                                <div class="text-theme-9">+20 Minutes</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-2.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">Shawn Murray</div>
+                                                    <div class="text-gray-600 text-xs mt-0.5">6 September 2020</div>
+                                                </div>
+                                                <div class="text-theme-9">+27 Minutes</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-8.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">Sounak Biswas</div>
+                                                    <div class="text-gray-600 text-xs mt-0.5">20 August 2021</div>
+                                                </div>
+                                                <div class="text-theme-9">+33 Minutes</div>
+                                            </div>
+                                        </div>
+                                        <div class="intro-x">
+                                            <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                    <img alt="Rubick Tailwind HTML Admin Template" src="dist/images/profile-13.jpg">
+                                                </div>
+                                                <div class="ml-4 mr-auto">
+                                                    <div class="font-medium">Shobha Shetty</div>
+                                                    <div class="text-gray-600 text-xs mt-0.5">1 July 2021</div>
+                                                </div>
+                                                <div class="text-theme-6">-25 Minutes</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="intro-x w-full block text-center rounded-md py-3 border border-dotted border-theme-15 dark:border-dark-5 text-theme-16 dark:text-gray-600">View More</a> 
+                                    </div>
+                                </div>
+                                <!-- END: Transactions -->
                                 <!-- BEGIN: Recent Activities -->
                                 <div class="col-span-12 md:col-span-6 xl:col-span-4 xxl:col-span-12 mt-3">
                                     <div class="intro-x flex items-center h-10">
@@ -773,7 +1088,50 @@
                                     </div>
                                 </div>
                                 <!-- END: Recent Activities -->
-                               
+                               <!-- BEGIN: Important Notes -->
+                                <div class="col-span-12 md:col-span-6 xl:col-span-12 xl:col-start-1 xl:row-start-1 xxl:col-start-auto xxl:row-start-auto mt-3">
+                                    <div class="intro-x flex items-center h-10">
+                                        <h2 class="text-lg font-medium truncate mr-auto">
+                                            Important Notes
+                                        </h2>
+                                        <button data-carousel="important-notes" data-target="prev" class="tiny-slider-navigator btn px-2 border-gray-400 text-gray-700 dark:text-gray-300 mr-2"> <i data-feather="chevron-left" class="w-4 h-4"></i> </button>
+                                        <button data-carousel="important-notes" data-target="next" class="tiny-slider-navigator btn px-2 border-gray-400 text-gray-700 dark:text-gray-300 mr-2"> <i data-feather="chevron-right" class="w-4 h-4"></i> </button>
+                                    </div>
+                                    <div class="mt-5 intro-x">
+                                        <div class="box zoom-in">
+                                            <div class="tiny-slider" id="important-notes">
+                                                <div class="p-5">
+                                                    <div class="text-base font-medium truncate">Lorem Ipsum is simply dummy text</div>
+                                                    <div class="text-gray-500 mt-1">20 Hours ago</div>
+                                                    <div class="text-gray-600 text-justify mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                                    <div class="font-medium flex mt-5">
+                                                        <button type="button" class="btn btn-secondary py-1 px-2">View Notes</button>
+                                                        <button type="button" class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss</button>
+                                                    </div>
+                                                </div>
+                                                <div class="p-5">
+                                                    <div class="text-base font-medium truncate">Lorem Ipsum is simply dummy text</div>
+                                                    <div class="text-gray-500 mt-1">20 Hours ago</div>
+                                                    <div class="text-gray-600 text-justify mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                                    <div class="font-medium flex mt-5">
+                                                        <button type="button" class="btn btn-secondary py-1 px-2">View Notes</button>
+                                                        <button type="button" class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss</button>
+                                                    </div>
+                                                </div>
+                                                <div class="p-5">
+                                                    <div class="text-base font-medium truncate">Lorem Ipsum is simply dummy text</div>
+                                                    <div class="text-gray-500 mt-1">20 Hours ago</div>
+                                                    <div class="text-gray-600 text-justify mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                                    <div class="font-medium flex mt-5">
+                                                        <button type="button" class="btn btn-secondary py-1 px-2">View Notes</button>
+                                                        <button type="button" class="btn btn-outline-secondary py-1 px-2 ml-auto ml-auto">Dismiss</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END: Important Notes -->
                                 <!-- BEGIN: Schedules -->
                                 <div class="col-span-12 md:col-span-6 xl:col-span-4 xxl:col-span-12 xl:col-start-1 xl:row-start-2 xxl:col-start-auto xxl:row-start-auto mt-3">
                                     <div class="intro-x flex items-center h-10">
